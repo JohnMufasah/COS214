@@ -17,7 +17,7 @@ private:
 public:
 
     RunCheckpoint(int stage,
-                  vector<string> records);
+    vector<string> records);
 
     int getStage();
 
