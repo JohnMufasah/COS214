@@ -13,4 +13,4 @@ class RestApiFactory: public ConnectorFactory {
         Connector* createConnector() override;
 };
 
-#endif RESTAPIFACTORY_H
+#endif //RESTAPIFACTORY_H
