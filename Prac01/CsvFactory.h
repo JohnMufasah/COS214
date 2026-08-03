@@ -1,6 +1,7 @@
 #ifndef CSVFACTORY_H
 #define CSVFACTORY_H
 
+#include "CsvConnector.h" 
 #include "ConnectorFactory.h"
 
 #include <iostream>
@@ -13,4 +14,4 @@ class CsvFactory: public ConnectorFactory {
         Connector* createConnector() override;
 };
 
-#endif CSVFACTORY_H
+#endif //CSVFACTORY_H
