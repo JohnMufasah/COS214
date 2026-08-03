@@ -19,12 +19,14 @@ class Transformation {
 
 class DeduplicateStep: public Transformation {
     public: 
+        DeduplicateStep();
         virtual Transformation* clone();
         virtual std::vector<std::string> apply(std::vector<std::string>);
 };
 
 class AggregateByRegionStep: public Transformation {
     public: 
+        AggregateByRegionStep();
         virtual Transformation* clone();
         virtual std::vector<std::string> apply(std::vector<std::string>);
 };
@@ -38,4 +40,4 @@ class TransformationRegistry {
         ~TransformationRegistry();
 };
 
-#endif TRANSFORMATION_H
+#endif //TRANSFORMATION_H
