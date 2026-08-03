@@ -13,4 +13,4 @@ class PostgresFactory: public ConnectorFactory {
         Connector* createConnector() override;
 };
 
-#endif POSTGRESFACTORY_H
+#endif //POSTGRESFACTORY_H
