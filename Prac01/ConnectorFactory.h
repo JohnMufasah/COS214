@@ -1,11 +1,12 @@
 #ifndef CONNECTORFACTORY_H
 #define CONNECTORFACTORY_H
 
-#include "Connector.h"
 #include <iostream>
 #include <string>
 #include <map>
 #include <vector>
+
+class Connector;
 
 class ConnectorFactory {
     public:
@@ -13,4 +14,4 @@ class ConnectorFactory {
         virtual ~ConnectorFactory();
 };
 
-#endif CONNECTORFACTORY_H
+#endif //CONNECTORFACTORY_H
