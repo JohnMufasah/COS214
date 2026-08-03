@@ -1,11 +1,6 @@
 #ifndef CONNECTOR_H
 #define CONNECTOR_H
 
-#include "Connector.h"
-#include "RestApiFactory.h"
-#include "CsvFactory.h"
-#include "PostgresFactory.h"
-
 #include <iostream>
 #include <string>
 #include <map>
@@ -39,4 +34,4 @@ class CsvConnector: public Connector {
         CsvConnector();
 };
 
-#endif CONNECTOR_H
+#endif //CONNECTOR_H
