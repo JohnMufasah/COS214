@@ -14,4 +14,4 @@ class CsvConnector: public Connector {
         CsvConnector();
 };
 
-#endif CSVCONNECTOR_H
+#endif //CSVCONNECTOR_H
