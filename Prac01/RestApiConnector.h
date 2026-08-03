@@ -14,4 +14,4 @@ class RestApiConnector: public Connector {
         RestApiConnector();
 };
 
-#endif RESTAPICONNECTOR_H
+#endif //RESTAPICONNECTOR_H
