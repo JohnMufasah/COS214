@@ -14,4 +14,4 @@ class PostgresConnector: public Connector {
         PostgresConnector();
 };
 
-#endif POSTGRESCONNECTOR_H
+#endif //POSTGRESCONNECTOR_H
