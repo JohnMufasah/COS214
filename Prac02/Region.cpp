@@ -1,26 +1,32 @@
 #include "Region.h"
+#include <algorithm>
 #include <iostream>
 
-using namespace std;
-
-Region::Region(std::string name) : Place(name) {
-
-}
-
-void Region::add(Place* place) {
-    children.push_back(place);
-}
-
-void Region::display() {
-    cout << "Region: " << name << endl;
-
-    for(Place* place : children) {
-        place->display();
-    }
-}
+Region::Region(const std::string& n) : name(n) {}
 
 Region::~Region() {
-    for (Place* place : children) {
-        delete place;
+    for (Place* child : children) {
+        delete child;
     }
+    children.clear();
+}
+
+void Region::add(Place* p) {
+    children.push_back(p);
+}
+
+void Region::remove(Place* p) {
+    auto it = std::find(children.begin(), children.end(), p);
+    if (it != children.end()) {
+        children.erase(it);
+    }
+}
+
+void Region::print() const {
+    std::cout << name << " [ ";
+    for (size_t i = 0; i < children.size(); ++i) {
+        children[i]->print();
+        if (i + 1 < children.size()) std::cout << ", ";
+    }
+    std::cout << " ]";
 }

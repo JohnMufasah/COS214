@@ -1,12 +1,8 @@
 #include "Location.h"
 #include <iostream>
 
-using namespace std;
-//location is a leaf, so it has no children
-Location::Location(std::string name) : Place(name) {
-    
-}
+Location::Location(const std::string& n) : name(n) {}
 
-void Location::display() {
-    cout << "Location: " << name << endl;
+void Location::print() const {
+    std::cout << name;
 }
